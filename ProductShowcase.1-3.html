@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color for contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full height */
+        }
+        header {
+            background-color: #1f1f1f; /* Darker header */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            flex: 1; /* Take up remaining space */
+            display: flex;
+            justify-content: center; /* Center products */
+            align-items: center; /* Center vertically */
+            overflow-y: auto; /* Allow vertical scrolling */
+            padding: 20px;
+        }
+        #products {
+            display: flex;
+            justify-content: center; /* Center products */
+            flex-wrap: wrap; /* Allow wrapping */
+            gap: 20px; /* Space between cards */
+        }
+        .product-card {
+            width: 200px; /* Fixed width for cards */
+            height: 300px; /* Fixed height for uniformity */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #1e1e1e; /* Dark card background */
+            border: 1px solid #444; /* Slightly lighter border */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Dark shadow */
+            border-radius: 8px; /* Rounded corners */
+        }
+        .product-card img {
+            max-width: 100%;
+            max-height: 150px;
+            margin-bottom: 10px;
+        }
+        .product-card h2 {
+            font-size: 16px;
+            color: #ffffff; /* White text for product title */
+            text-align: center;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #cccccc; /* Light grey for product price */
+            margin: 5px 0;
+        }
+        .product-card button {
+            padding: 10px;
+            background-color: #007bff; /* Button color */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .product-card button:hover {
+            background-color: #0056b3; /* Darker button on hover */
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0; /* Light background on hover */
+        }
+        footer {
+            background-color: #333; /* Dark footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recommended Food</h1>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product-card">
+                <img src="pic/1.jpg" alt="Product 1">
+                <h2>ข้าวผัดปลาเค็มคะน้าทรงเครื่องคะน้าฮ่องกง</h2>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/2.jpg" alt="Product 2">
+                <h2>ข้าวซอยเนื้อน่องลายเส้นเฟตตูชินี่</h2>
+                <p>$35.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/3.jpg" alt="Product 3">
+                <h2>ปลาหิมะอบซอสมันกุ้ง</h2>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+ </div>
+            <div class="product-card">
+                <img src="pic/4.jpg" alt="Product 4">
+                <h2>พาสต้าผัดพริกแห้งกระเทียมเบคอน</h2>
+                <p>$50.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/5.jpg" alt="Product 5">
+                <h2>สลัดทูน่าราดน้ำยำรสแซ่บและบัลซามิก</h2>
+                <p>$60.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/6.jpg" alt="Product 6">
+                <h2>โรลหน้าเอนกาวะสอดไส้กุ้งเทมปุระและชีส</h2>
+                <p>$70.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/7.jpg" alt="Product 7">
+                <h2>หมูฮ้องและหมั่นโถวทอด</h2>
+                <p>$80.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/8.jpg" alt="Product 8">
+                <h2>ปลานึ่งจิ้มแจ่ว ข้าวเหนียวจี่</h2>
+                <p>$90.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/9.jpg" alt="Product 9">
+                <h2>แซลมอนโรลซูวี ครีมซอสต้มข่า</h2>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/10.jpg" alt="Product 10">
+                <h2>พาสต้าอัลเฟรโด้ครีมทรัฟเฟิล</h2>
+                <p>$150.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/11.jpg" alt="Product 11">
+                <h2>ซี่โครงหมู่อบซอสบาบีคิว</h2>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="pic/12.jpg" alt="Product 12">
+                <h2>ข้าวหน้าเนื้อย่างไฟ</h2>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 Recommended Food. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for Adding Effects
+        document.querySelectorAll(".product-card button").forEach(button => {
+            button.addEventListener("click", () => {
+                alert("Item added to cart!");
+            });
+        });
+    </script>
+</body>
+</html>
